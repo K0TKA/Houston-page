@@ -1,47 +1,215 @@
-/*Контент занимает 70% ширины страницы.*/
-/*Контент выровнен по середине.*/
-body
-{
-    margin: auto;
-    max-width: 70%;
-    text-align: left;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-/*Заголовки всех уровней выполнены шрифтом без засечек.*/
-/*Верхний отступ заголовков установлен больше нижнего (например, 1.5em), 
-чтобы соблюсти правило внутреннего и внешнего.*/
-h1, h2, h3 {
-    font-family: sans-serif;
-    text-indent: 1.5em;
-    text-indent: initial;
-}
-
-/*Заголовки первого уровня имеют размер 32px.*/
-h1 {
-    font-size: 32px;
-}
-
-/*Таблицы имеют непрерывные границы чёрного цвета толщиной 1px.*/
-table, th, td {
-    border: 1px solid black;
-}
-
-/*Подписи под картинками выполены курсивом.*/
-figcaption {
-    font-style: italic;
-}
-
-/*Картинки обтекаются текстом. Картинки справа, текст слева.*/
-.picture {
-    float: right;
-}
-
-.q1 th {
+header {
+    position: fixed;
+    background-color: #007765;
+    color: white;
+    height: 84px;
+    width: 1219px;
     text-align: center;
-    white-space: nowrap;
+    float: left;
+    width: 100%;
+    z-index: 2;
 }
 
-caption { 
-    caption-side: bottom;
-   }
+.container {
+    width: 100%;
+    max-width: 1219px;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin: auto;
+    position: relative;
+}
 
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    width: 184px;
+    height: 45px;
+    padding-top: 20px;
+    padding-bottom: 19px;
+}
+
+nav {
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    font-size: 24px;
+    padding-top: 29px;
+    padding-bottom: 26px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    line-height: 29px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+.textOnPic {
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+section {
+    padding-top: 84px;
+}
+
+.s1 {
+    background-image: url(image.png);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 72px;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    clear: both;
+    float: left;
+}
+
+.s2 h1 {
+    color: #007765;
+    text-align: center;
+    padding-bottom: 16px;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.s2 {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-size: 32px;
+    line-height: 38px;
+    width: 100%;
+    margin: 0 auto;
+    color: black;
+    float: left;
+    padding-top: 48px;
+    padding-bottom: 92px;
+}
+
+.s3 {
+    background-image: url(image2.png);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 48px;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    float: left;
+}
+
+.s3 p {
+    padding-top: 128px;
+    padding-bottom: 127px;
+    padding: 163px;
+}
+
+.s4 {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-size: 32px;
+    width: 100%;
+    margin: 0 auto;
+    color: black;
+    float: left;
+    padding-top: 48px;
+    padding-bottom: 92px;
+    line-height: 38px;
+}
+
+.s4 h1 {
+    color: #007765;
+    text-align: center;
+    padding-bottom: 16px;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.s4 a {
+    float: left;
+    padding-right: 48px;
+    padding-top: 16px;
+}
+
+.s5 {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 32px;
+    width: 100%;
+    margin: 0 auto;
+    color: black;
+    float: left;
+    padding-top: 48px;
+    padding-bottom: 92px;
+    line-height: 38px;
+}
+
+.s5 h1 {
+    color: #007765;
+    text-align: center;
+    padding-bottom: 16px;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.s5 figure {
+    display:inline-block;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 91px;
+    padding-left: 91px;
+    padding-right: 91px;
+}
+
+.s5 strong {
+    color: #007765;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.s5 em {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.s5 figcaption {
+    line-height: 0%;
+}
+
+footer {
+    background-color: #333333;
+    display: inline-block;
+    color: white;
+    height: 176px;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 48px;
+    padding-bottom: 64px;
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 340px;
+    padding-right: 339px;
+}
+
+#nav1, #nav2, #nav3 {
+    padding-top: 84px;
+    margin-top: -84px;
+}
